@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Card Variants</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            margin: 0;
+            padding: 40px 20px;
+            color: #1e293b;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+            gap: 24px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card {
+            width: 300px;
+            padding: 25px;
+            background-color: white;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        /* Card 1: Rounded card */
+        .card-one {
+            background-color: #dbeafe;
+            border-radius: 8px;
+            border: 1px solid #93c5fd;
+        }
+
+        .card-one h2 {
+            color: #1d4ed8;
+        }
+
+        /* Card 2: Soft card with shadow */
+        .card-two {
+            background-color: #ffffff;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+        }
+
+        .card-two h2 {
+            color: #0f766e;
+        }
+
+        /* Card 3: Dark card */
+        .card-three {
+            background-color: #1e293b;
+            color: #f8fafc;
+            border-radius: 4px;
+            border: 2px solid #64748b;
+        }
+
+        .card-three h2 {
+            color: #fbbf24;
+        }
+
+        .card button {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .card-one button {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        .card-two button {
+            background-color: #0f766e;
+            color: white;
+        }
+
+        .card-three button {
+            background-color: #fbbf24;
+            color: #1e293b;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 25px 15px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Three Card Variants</h1>
+
+    <div class="card-container">
+
+        <div class="card card-one">
+            <h2>Basic Card</h2>
+            <p>
+                This card uses a light blue background, a thin border,
+                and a small border radius for a clean appearance.
+            </p>
+            <button type="button">Learn More</button>
+        </div>
+
+        <div class="card card-two">
+            <h2>Modern Card</h2>
+            <p>
+                This card uses a white background, rounded corners,
+                and a soft shadow for a modern design.
+            </p>
+            <button type="button">Explore</button>
+        </div>
+
+        <div class="card card-three">
+            <h2>Dark Card</h2>
+            <p>
+                This card uses a dark background, a visible border,
+                and slightly rounded corners for a bold appearance.
+            </p>
+            <button type="button">Discover</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

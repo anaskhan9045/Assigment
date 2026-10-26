@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My College and My Course</title>
+</html>
+<body>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f1f5f9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #173b70;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #102b50;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        section, article, aside {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #173b70;
+        }
+
+        aside {
+            border-left: 5px solid #173b70;
+        }
+
+        footer {
+            background-color: #173b70;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        a:focus-visible {
+            outline: 3px solid orange;
+            outline-offset: 3px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Website heading -->
+    <header>
+        <h1>My College and My Course</h1>
+        <p>My Academic Information Page</p>
+    </header>
+
+    <!-- Internal navigation -->
+    <nav aria-label="Main navigation">
+        <a href="#college">My College</a>
+        <a href="#course">My Course</a>
+        <a href="#goals">My Goals</a>
+    </nav>
+
+    <!-- Main page content -->
+    <main>
+
+        <!-- College information -->
+        <section id="college">
+            <h2>My College</h2>
+            <p>My college helps me gain knowledge and develop new skills.</p>
+
+            <ul>
+                <li>College Name: My College</li>
+                <li>Location: Uttar Pradesh, India</li>
+                <li>Facilities:
+                    <ul>
+                        <li>Library</li>
+                        <li>Computer Lab</li>
+                        <li>Sports Ground</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Course information -->
+        <article id="course">
+            <h2>My Course: BCA</h2>
+            <p>
+                Bachelor of Computer Applications (BCA) focuses on
+                computer applications, programming and software development.
+            </p>
+
+            <h3>Important Subjects</h3>
+            <ol>
+                <li>HTML and CSS</li>
+                <li>Java Programming</li>
+                <li>Database Management System</li>
+                <li>Computer Fundamentals</li>
+            </ol>
+        </article>
+
+        <!-- Learning goals -->
+        <section id="goals">
+            <h2>My Learning Goals</h2>
+            <ol>
+                <li>Learn web development.</li>
+                <li>Improve programming skills.</li>
+                <li>Create practical projects.</li>
+                <li>Prepare for a career in IT.</li>
+            </ol>
+        </section>
+
+        <!-- Additional information -->
+        <aside>
+            <h2>My Interests</h2>
+            <p>I enjoy learning new technologies and building websites.</p>
+        </aside>
+
+    </main>
+
+    <!-- Website footer -->
+    <footer>
+        <p>&copy; 2026 My College and My Course</p>
+        <p>Created for an HTML assignment.</p>
+    </footer>
+
+</body>
+</html>

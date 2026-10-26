@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Landing Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #1e293b;
+            background: #f8fafc;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 18px 8%;
+            background: white;
+            box-shadow: 0 2px 8px #0000000d;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            display: block;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #334155;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background: #dbeafe;
+            color: #1d4ed8;
+        }
+
+        /* Hero section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 70px 8%;
+            background: linear-gradient(135deg, #eff6ff, #dbeafe);
+        }
+
+        .hero-content {
+            flex: 1 1 300px;
+            max-width: 560px;
+        }
+
+        .hero-content h1 {
+            margin: 0 0 18px;
+            font-size: clamp(32px, 5vw, 48px);
+            line-height: 1.2;
+            color: #1e3a8a;
+        }
+
+        .hero-content p {
+            margin-bottom: 25px;
+            font-size: 18px;
+            color: #475569;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #2563eb;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        .hero-image {
+            flex: 1 1 250px;
+            max-width: 400px;
+            min-height: 280px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #bfdbfe;
+            border-radius: 20px;
+            font-size: 90px;
+        }
+
+        /* Features section */
+        .features {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        .features h2 {
+            color: #1e3a8a;
+            margin-bottom: 30px;
+        }
+
+        .feature-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 22px;
+        }
+
+        .feature-card {
+            flex: 1 1 220px;
+            max-width: 320px;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px #0000000d;
+        }
+
+        .feature-card h3 {
+            color: #2563eb;
+        }
+
+        .feature-card p {
+            color: #64748b;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #1e293b;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 650px) {
+            .navbar {
+                flex-direction: column;
+                padding: 18px;
+            }
+
+            .nav-links {
+                justify-content: center;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 45px 20px;
+                gap: 30px;
+            }
+
+            .hero-content {
+                flex: auto;
+                width: 100%;
+            }
+
+            .hero-image {
+                flex: auto;
+                width: 100%;
+                min-height: 210px;
+            }
+
+            .features {
+                padding: 40px 20px;
+            }
+
+            .feature-card {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="logo">FlexiWeb</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Landing-page hero -->
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Build Better Websites with Flexbox</h1>
+
+                <p>
+                    Create beautiful, flexible, and responsive
+                    layouts using modern HTML and CSS.
+                    Make your ideas come to life.
+                </p>
+
+                <a href="#features" class="btn">Explore Features</a>
+            </div>
+
+            <div class="hero-image" aria-hidden="true">
+                💻
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features" id="features">
+            <h2>Why Choose Us?</h2>
+
+            <div class="feature-list">
+                <article class="feature-card">
+                    <h3>Responsive Design</h3>
+                    <p>
+                        Layouts adjust to mobile, tablet,
+                        and desktop screens.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Clean Layout</h3>
+                    <p>
+                        Consistent spacing and alignment
+                        improve readability.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Easy to Customize</h3>
+                    <p>
+                        Reusable CSS makes the design
+                        simple to maintain.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="features" id="about">
+            <h2>About FlexiWeb</h2>
+            <p>A simple demonstration of a responsive Flexbox landing page.</p>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2026 FlexiWeb. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

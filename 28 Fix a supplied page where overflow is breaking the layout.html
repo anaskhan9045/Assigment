@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Layout Fix</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #334155;
+        }
+
+        header {
+            background-color: #1e40af;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .card {
+            flex: 1 1 250px;
+            min-width: 0;
+            padding: 20px;
+            background-color: #dbeafe;
+            border-radius: 8px;
+        }
+
+        /* Prevent long text from stretching the layout */
+        p, h2, a {
+            overflow-wrap: anywhere;
+        }
+
+        /* Make images responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Handle wide code or preformatted content */
+        pre {
+            max-width: 100%;
+            overflow-x: auto;
+            white-space: pre;
+            padding: 12px;
+            background-color: #e2e8f0;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 15px;
+            text-align: center;
+            background-color: #1e293b;
+            color: white;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .card-container {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Overflow Layout Fix</h1>
+        <p>A responsive page that fits different screen sizes.</p>
+    </header>
+
+    <main class="container">
+        <h2>Our Content</h2>
+
+        <div class="card-container">
+            <section class="card">
+                <h2>Card One</h2>
+                <p>
+                    This card adjusts to the available width instead
+                    of extending beyond its container.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2>Card Two</h2>
+                <p>
+                    Long text can be handled without breaking the page:
+                    https://example.com/a-very-long-unbroken-address-that-could-cause-overflow
+                </p>
+            </section>
+
+            <section class="card">
+                <h2>Card Three</h2>
+                <p>
+                    Flexible sizing allows the cards to wrap onto
+                    another row when there is not enough space.
+                </p>
+            </section>
+        </div>
+
+        <h2>Scrollable Code Example</h2>
+        <pre>const message = "This long line stays inside its own scrollable area";</pre>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website</p>
+    </footer>
+
+</body>
+</html>

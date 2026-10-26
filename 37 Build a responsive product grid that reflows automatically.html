@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px 15px;
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0 0 8px;
+        }
+
+        header p {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Responsive product grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+        }
+
+        /* Product card */
+        .product-card {
+            min-width: 0;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #dbeafe;
+            font-size: 65px;
+        }
+
+        .product-info {
+            padding: 18px;
+        }
+
+        .product-info h2 {
+            margin: 0 0 10px;
+            font-size: 19px;
+        }
+
+        .product-info p {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .price {
+            color: #0f766e !important;
+            font-size: 21px !important;
+            font-weight: bold;
+        }
+
+        .buy-button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: #2563eb;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            background-color: #1d4ed8;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 18px;
+            text-align: center;
+            background-color: #1e293b;
+            color: white;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 14px;
+            }
+
+            .product-grid {
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Product Store</h1>
+        <p>Discover our latest products</p>
+    </header>
+
+    <main class="container">
+        <div class="product-grid">
+
+            <article class="product-card">
+                <div class="product-image" aria-hidden="true">🎧</div>
+                <div class="product-info">
+                    <h2>Headphones</h2>
+                    <p>Enjoy high-quality sound and comfort.</p>
+                    <p class="price">₹1,499</p>
+                    <button class="buy-button" type="button">
+                        View Product
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image" aria-hidden="true">⌚</div>
+                <div class="product-info">
+                    <h2>Smart Watch</h2>
+                    <p>Track your daily activities with ease.</p>
+                    <p class="price">₹2,499</p>
+                    <button class="buy-button" type="button">
+                        View Product
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image" aria-hidden="true">🎒</div>
+                <div class="product-info">
+                    <h2>Backpack</h2>
+                    <p>A practical bag for everyday adventures.</p>
+                    <p class="price">₹999</p>
+                    <button class="buy-button" type="button">
+                        View Product
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image" aria-hidden="true">📷</div>
+                <div class="product-info">
+                    <h2>Digital Camera</h2>
+                    <p>Capture your favourite memories.</p>
+                    <p class="price">₹5,999</p>
+                    <button class="buy-button" type="button">
+                        View Product
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image" aria-hidden="true">👟</div>
+                <div class="product-info">
+                    <h2>Sports Shoes</h2>
+                    <p>Comfortable shoes for everyday use.</p>
+                    <p class="price">₹1,799</p>
+                    <button class="buy-button" type="button">
+                        View Product
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image" aria-hidden="true">🎒</div>
+                <div class="product-info">
+                    <h2>Travel Bag</h2>
+                    <p>Carry your essentials wherever you go.</p>
+                    <p class="price">₹1,299</p>
+                    <button class="buy-button" type="button">
+                        View Product
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Product Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

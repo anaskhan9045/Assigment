@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu Bar</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 15px 30px;
+            background-color: #1e3a8a;
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Menu links */
+        .nav-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            display: block;
+            padding: 10px 15px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover,
+        .nav-links a:focus-visible {
+            background-color: #2563eb;
+            outline: none;
+        }
+
+        /* Page content */
+        main {
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        main h1 {
+            color: #1e3a8a;
+        }
+
+        main p {
+            color: #475569;
+            line-height: 1.6;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .nav-links {
+                width: 100%;
+                justify-content: center;
+                gap: 4px;
+            }
+
+            .nav-links a {
+                padding: 9px 10px;
+            }
+
+            main {
+                padding: 45px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="logo">MyWebsite</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="home">
+        <h1>Welcome to My Website</h1>
+        <p>
+            This responsive menu bar is built using CSS Flexbox.
+            Resize your browser to see the layout change.
+        </p>
+    </main>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>Learn more about our website.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p>Explore our services.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Get in touch with us.</p>
+    </section>
+
+</body>
+</html>

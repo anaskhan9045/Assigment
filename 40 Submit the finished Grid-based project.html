@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  grid-template-areas:
+    "header header"
+    "sidebar products";
+  gap: 20px;
+  padding: 20px;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header input {
+  width: min(300px, 100%);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+.sidebar a {
+  display: block;
+  margin: 16px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #2563eb;
+}
+
+.products {
+  grid-area: products;
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  gap: 20px;
+  align-content: start;
+}
+
+.product {
+  min-width: 0;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #00000010;
+}
+
+.product img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product h3 {
+  font-size: 18px;
+}
+
+.product p {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.product button {
+  width: 100%;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 700px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "products";
+    padding: 12px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .header input {
+    width: 100%;
+  }
+
+  .sidebar {
+    padding: 12px;
+  }
+
+  .sidebar a {
+    display: inline-block;
+    margin: 8px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopZone - Product Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <header class="header">
+      <h1>ShopZone</h1>
+      <input type="search" placeholder="Search products...">
+    </header>
+
+    <aside class="sidebar">
+      <h2>Categories</h2>
+      <a href="#">Electronics</a>
+      <a href="#">Clothing</a>
+      <a href="#">Accessories</a>
+      <a href="#">Home</a>
+    </aside>
+
+    <main class="products">
+      <article class="product">
+        <img src="https://placehold.co/300x200?text=Headphones"
+             alt="Wireless headphones">
+        <h3>Wireless Headphones</h3>
+        <p>$49.99</p>
+        <button>Add to Cart</button>
+      </article>
+
+      <article class="product">
+        <img src="https://placehold.co/300x200?text=Smart+Watch"
+             alt="Smart watch">
+        <h3>Smart Watch</h3>
+        <p>$79.99</p>
+        <button>Add to Cart</button>
+      </article>
+
+      <article class="product">
+        <img src="https://placehold.co/300x200?text=Running+Shoes"
+             alt="Running shoes">
+        <h3>Running Shoes</h3>
+        <p>$59.99</p>
+        <button>Add to Cart</button>
+      </article>
+
+      <article class="product">
+        <img src="https://placehold.co/300x200?text=Backpack"
+             alt="Travel backpack">
+        <h3>Travel Backpack</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+/* Tablet breakpoint: 700px and below */
+@media (max-width: 700px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "products";
+    padding: 12px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .header input {
+    width: 100%;
+  }
+
+  .sidebar {
+    padding: 12px;
+  }
+
+  .sidebar a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+}
+
+/* Mobile breakpoint: 480px and below */
+@media (max-width: 480px) {
+  .layout {
+    padding: 8px;
+    gap: 12px;
+  }
+
+  .header {
+    padding: 14px;
+  }
+
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .sidebar h2 {
+    font-size: 18px;
+  }
+
+  .sidebar a {
+    font-size: 14px;
+    margin: 6px 4px;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .product {
+    padding: 12px;
+  }
+
+  .product img {
+    height: 180px;
+  }
+
+  .product h3 {
+    font-size: 16px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopZone - Product Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <header class="header">
+      <h1>ShopZone</h1>
+      <input type="search" placeholder="Search products...">
+    </header>
+
+    <aside class="sidebar">
+      <h2>Categories</h2>
+      <a href="#">Electronics</a>
+      <a href="#">Clothing</a>
+      <a href="#">Accessories</a>
+      <a href="#">Home</a>
+    </aside>
+
+    <main class="products">
+      <article class="product">
+        <img src="https://placehold.co/300x200?text=Headphones"
+             alt="Wireless headphones">
+        <h3>Wireless Headphones</h3>
+        <p>$49.99</p>
+        <button>Add to Cart</button>
+      </article>
+
+      <article class="product">
+        <img src="https://placehold.co/300x200?text=Smart+Watch"
+             alt="Smart watch">
+        <h3>Smart Watch</h3>
+        <p>$79.99</p>
+        <button>Add to Cart</button>
+      </article>
+
+      <article class="product">
+        <img src="https://placehold.co/300x200?text=Running+Shoes"
+             alt="Running shoes">
+        <h3>Running Shoes</h3>
+        <p>$59.99</p>
+        <button>Add to Cart</button>
+      </article>
+
+      <article class="product">
+        <img src="https://placehold.co/300x200?text=Backpack"
+             alt="Travel backpack">
+        <h3>Travel Backpack</h3>
+        <p>$39.99</p>
+        <button>Add to Cart</button>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
+
+</body>
+</html>

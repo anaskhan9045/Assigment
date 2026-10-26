@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover smarter tools with NovaTech.">
+  <title>NovaTech | Build Something Amazing</title>
+<style>
+    
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Header: Flexbox */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 18px 7%;
+  background: #101827;
+  color: #ffffff;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #60a5fa;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav a {
+  color: #d1d5db;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+.nav-button {
+  padding: 10px 18px;
+  color: #ffffff;
+  background: #3b82f6;
+  border-radius: 6px;
+}
+
+/* Hero: Grid */
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: 48px;
+  padding: 70px 7%;
+  color: #ffffff;
+  background: #101827;
+}
+
+.hero-content {
+  max-width: 540px;
+}
+
+.eyebrow {
+  color: #60a5fa;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  margin: 16px 0;
+  font-size: 60px;
+  line-height: 1.1;
+}
+
+.hero p {
+  color: #cbd5e1;
+  font-size: 18px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+  padding: 11px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.primary {
+  color: #ffffff;
+  background: #3b82f6;
+}
+
+.primary:hover {
+  background: #2563eb;
+}
+
+.secondary {
+  color: #ffffff;
+  border: 1px solid #64748b;
+}
+
+.hero-image img {
+  width: 100%;
+  aspect-ratio: 7 / 5;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* Features: Grid */
+.features {
+  padding: 70px 7%;
+}
+
+.section-heading {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.section-heading h2,
+.about h2 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+.section-heading p,
+.about p {
+  color: #6b7280;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.feature-card {
+  padding: 26px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.feature-icon {
+  font-size: 32px;
+}
+
+.feature-card h3 {
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  margin-bottom: 0;
+  color: #6b7280;
+}
+
+/* About section */
+.about {
+  padding: 60px 7%;
+  text-align: center;
+  background: #eff6ff;
+}
+
+.about .btn {
+  margin-top: 12px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #d1d5db;
+  background: #101827;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+  <header class="header">
+    <a href="#home" class="logo">NovaTech<span>.</span></a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <a href="#features" class="nav-button">Get Started</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">NEXT-GEN TECHNOLOGY</span>
+        <h1>Build something amazing.</h1>
+        <p>
+          Discover smarter tools and simple solutions
+          designed to help you do more every day.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#features" class="btn primary">Get Started</a>
+          <a href="#about" class="btn secondary">Learn More</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://placehold.co/700x500/172554/FFFFFF?text=NovaTech"
+          alt="NovaTech technology showcase">
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="section-heading">
+        <h2>Why Choose NovaTech?</h2>
+        <p>Everything you need to work smarter.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">⚡</div>
+          <h3>Fast Performance</h3>
+          <p>Work efficiently with streamlined tools.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🔒</div>
+          <h3>Secure by Design</h3>
+          <p>Keep your work protected and organized.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">📱</div>
+          <h3>Fully Responsive</h3>
+          <p>Enjoy a smooth experience on every device.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>Ready to get started?</h2>
+      <p>Take the next step toward a smarter workflow.</p>
+      <a href="#home" class="btn primary">Explore NovaTech</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 NovaTech. All rights reserved.</p>
+  </footer>
+</body>
+</html>

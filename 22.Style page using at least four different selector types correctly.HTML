@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+
+    <style>
+        /* 1. Element Selector */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 2. Class Selector */
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        /* 3. ID Selector */
+        #main-heading {
+            color: #2563eb;
+            text-align: center;
+        }
+
+        /* 4. Group Selector */
+        h2, h3 {
+            color: #0f766e;
+        }
+
+        /* 5. Descendant Selector */
+        .container p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* Additional styling */
+        .button {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 id="main-heading">Welcome to My Website</h1>
+
+        <h2>About Us</h2>
+        <p>
+            This webpage demonstrates different CSS selectors.
+            CSS makes HTML pages attractive and easy to read.
+        </p>
+
+        <h3>Our Features</h3>
+        <p>We use simple HTML and CSS to design this webpage.</p>
+
+        <a href="https://example.com" class="button">Learn More</a>
+
+    </div>
+
+</body>
+</html>

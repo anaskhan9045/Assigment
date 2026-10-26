@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 24px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin-bottom: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        /* Flexbox product listing */
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        /* Individual product card */
+        .product-card {
+            flex: 1 1 240px;
+            max-width: 270px;
+            min-width: 0;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            height: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #dbeafe;
+            font-size: 65px;
+        }
+
+        .product-info {
+            padding: 18px;
+        }
+
+        .product-info h3 {
+            margin: 0 0 10px;
+            font-size: 19px;
+        }
+
+        .description {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #64748b;
+            min-height: 42px;
+        }
+
+        .price {
+            font-size: 21px;
+            font-weight: bold;
+            color: #0f766e;
+            margin: 15px 0;
+        }
+
+        .buy-button {
+            width: 100%;
+            padding: 11px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            background-color: #1d4ed8;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 18px;
+            text-align: center;
+            color: white;
+            background-color: #1e293b;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .product-list {
+                gap: 16px;
+            }
+
+            .product-card {
+                flex-basis: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Online Store</h1>
+        <p>Discover our featured products</p>
+    </header>
+
+    <main class="container">
+        <h2>Our Products</h2>
+
+        <div class="product-list">
+
+            <article class="product-card">
+                <div class="product-image" aria-hidden="true">🎧</div>
+                <div class="product-info">
+                    <h3>Wireless Headphones</h3>
+                    <p class="description">
+                        Enjoy clear sound and comfortable listening.
+                    </p>
+                    <p class="price">₹1,499</p>
+                    <button class="buy-button" type="button">
+                        View Product
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image" aria-hidden="true">⌚</div>
+                <div class="product-info">
+                    <h3>Smart Watch</h3>
+                    <p class="description">
+                        Track your daily activities in style.
+                    </p>
+                    <p class="price">₹2,499</p>
+                    <button class="buy-button" type="button">
+                        View Product
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image" aria-hidden="true">🎒</div>
+                <div class="product-info">
+                    <h3>Travel Backpack</h3>
+                    <p class="description">
+                        A practical bag for school and travel.
+                    </p>
+                    <p class="price">₹999</p>
+                    <button class="buy-button" type="button">
+                        View Product
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image" aria-hidden="true">📷</div>
+                <div class="product-info">
+                    <h3>Digital Camera</h3>
+                    <p class="description">
+                        Capture memorable moments with ease.
+                    </p>
+                    <p class="price">₹5,999</p>
+                    <button class="buy-button" type="button">
+                        View Product
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Online Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

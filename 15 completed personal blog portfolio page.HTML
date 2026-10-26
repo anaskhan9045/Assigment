@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal portfolio, skills, projects and blog.">
+    <title>My Personal Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #1e3a8a;
+            padding: 14px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #facc15;
+        }
+
+        main {
+            max-width: 950px;
+            margin: 25px auto;
+            padding: 0 18px;
+        }
+
+        section, article {
+            background: white;
+            padding: 24px;
+            margin-bottom: 22px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #0000000d;
+        }
+
+        h2 {
+            color: #1e3a8a;
+        }
+
+        .profile {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 15px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .skills li {
+            background: #dbeafe;
+            color: #172554;
+            padding: 8px 14px;
+            border-radius: 20px;
+        }
+
+        .project {
+            border-left: 4px solid #2563eb;
+            padding-left: 15px;
+            margin: 20px 0;
+        }
+
+        .button {
+            display: inline-block;
+            background: #1d4ed8;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+        }
+
+        .button:hover {
+            background: #172554;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            section, article {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Personal Portfolio</h1>
+        <p>Student | Web Development Learner | Blogger</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <img
+                class="profile"
+                src="https://placehold.co/300x300/172554/ffffff?text=My+Photo"
+                alt="Placeholder portrait representing the portfolio owner">
+
+            <p>
+                Hello! I am a student interested in computers,
+                programming and web development. I enjoy learning
+                new technologies and creating useful websites.
+            </p>
+
+            <a class="button" href="#projects">View My Projects</a>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <ul class="skills">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Java</li>
+                <li>Responsive Design</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <article class="project">
+                <h3>1. Personal Portfolio Website</h3>
+                <p>
+                    A responsive website that introduces me,
+                    displays my skills and showcases my work.
+                </p>
+            </article>
+
+            <article class="project">
+                <h3>2. College Information Page</h3>
+                <p>
+                    An HTML page presenting college information,
+                    course subjects and learning goals using lists
+                    and semantic elements.
+                </p>
+            </article>
+
+            <article class="project">
+                <h3>3. Fashion E-commerce Concept</h3>
+                <p>
+                    A sample fashion store homepage designed to
+                    explore online shopping website layouts.
+                </p>
+            </article>
+        </section>
+
+        <section id="blog">
+            <h2>My Blog</h2>
+
+            <article>
+                <h3>Why I Am Learning Web Development</h3>
+                <p>
+                    Web development allows me to turn ideas into
+                    interactive websites. I am starting with HTML
+                    and CSS before moving on to JavaScript.
+                </p>
+                <p><small>Category: Learning Journey</small></p>
+            </article>
+
+            <article>
+                <h3>My First HTML Project</h3>
+                <p>
+                    My first project helped me understand headings,
+                    paragraphs, links, lists and the basic structure
+                    of an HTML document.
+                </p>
+                <p><small>Category: Web Development</small></p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: your-email@example.com</p>
+            <p>Replace this sample email with your own email address.</p>
+            <a class="button"
+               href="mailto:your-email@example.com">
+                Send Me an Email
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Personal Portfolio. All rights reserved.</p>
+        <a href="#about" style="color: white;">Back to Top ↑</a>
+    </footer>
+
+</body>
+</html>

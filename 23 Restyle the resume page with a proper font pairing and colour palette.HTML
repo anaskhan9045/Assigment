@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional resume and career profile.">
+    <title>Professional Resume</title>
+
+    <style>
+        /* Colour palette:
+           Navy: #1E293B
+           Teal: #0F766E
+           Background: #F1F5F9
+           Text: #334155
+        */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 15px;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #F1F5F9;
+            color: #334155;
+            line-height: 1.7;
+        }
+
+        .resume {
+            max-width: 900px;
+            margin: auto;
+            background: #FFFFFF;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(30, 41, 59, 0.10);
+        }
+
+        header {
+            background: #1E293B;
+            color: #FFFFFF;
+            padding: 35px 40px;
+            border-bottom: 5px solid #0F766E;
+        }
+
+        h1, h2, h3 {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            color: #CBD5E1;
+            margin: 8px 0 0;
+        }
+
+        .contact {
+            margin-top: 16px;
+            font-size: 14px;
+        }
+
+        main {
+            padding: 30px 40px;
+        }
+
+        section {
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            color: #0F766E;
+            font-size: 21px;
+            border-bottom: 2px solid #DCEBE8;
+            padding-bottom: 8px;
+            margin-bottom: 14px;
+        }
+
+        h3 {
+            color: #1E293B;
+            font-size: 17px;
+            margin-bottom: 4px;
+        }
+
+        p {
+            margin-top: 5px;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 7px;
+        }
+
+        .job-meta {
+            color: #64748B;
+            font-size: 14px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills span {
+            background: #E6F4F1;
+            color: #0F766E;
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        footer {
+            background: #F8FAFC;
+            color: #64748B;
+            text-align: center;
+            padding: 16px;
+            font-size: 13px;
+            border-top: 1px solid #E2E8F0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 28px 22px;
+            }
+
+            main {
+                padding: 25px 22px;
+            }
+
+            h1 {
+                font-size: 29px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .resume {
+                box-shadow: none;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="resume">
+
+        <header>
+            <h1>Your Name</h1>
+            <p>Web Developer | Computer Applications Student</p>
+
+            <div class="contact">
+                Email: yourname@example.com |
+                Phone: +91-XXXXXXXXXX |
+                Location: Your City, India
+            </div>
+        </header>
+
+        <main>
+
+            <section>
+                <h2>Professional Summary</h2>
+                <p>
+                    Motivated and detail-oriented student with an interest
+                    in web development, programming, and technology.
+                    Eager to learn new skills and contribute to a
+                    professional team.
+                </p>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <p class="job-meta">Your College Name | 2026 – Present</p>
+                <p>Relevant subjects: HTML, CSS, Java, and Computer Fundamentals.</p>
+            </section>
+
+            <section>
+                <h2>Technical Skills</h2>
+                <div class="skills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Java</span>
+                    <span>JavaScript</span>
+                    <span>MS Office</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Projects</h2>
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    Created a responsive portfolio using HTML and CSS
+                    to present personal information, education, and skills.
+                </p>
+
+                <h3>Student Registration Form</h3>
+                <p>
+                    Designed an HTML form with text inputs, email fields,
+                    radio buttons, checkboxes, and a submit button.
+                </p>
+            </section>
+
+            <section>
+                <h2>Strengths</h2>
+                <ul>
+                    <li>Quick learner</li>
+                    <li>Problem-solving ability</li>
+                    <li>Teamwork and communication</li>
+                    <li>Willingness to learn new technologies</li>
+                </ul>
+            </section>
+
+        </main>
+
+        <footer>
+            Resume • Replace the sample information with your own details.
+        </footer>
+
+    </div>
+
+</body>
+</html>
